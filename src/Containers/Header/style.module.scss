@@ -1,0 +1,81 @@
+.wrapper{
+    background-color: #09080c;
+
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1240px;
+    display: flex;
+    justify-content: space-around;
+}
+.linksList{
+    display: flex;
+}
+.link{
+    margin-right: 20px;
+    color: #505052;
+    a{
+        font-weight: 200;
+       text-transform: uppercase;
+       font-size: 20px;
+       
+       transition: all 0.3s ease-in;
+       
+       
+       
+    }
+    &:hover{
+        a{
+            color:#fff;
+            font-weight: 300;
+            display: block;
+        }
+        a::after,a::before{
+            background: #fff;
+        }
+    }
+    a::after,a::before{
+        content: "";
+        display: block;
+        width: 50%;
+        height: 3px;
+        margin: auto;
+        transition: all 0.3s ease-in;
+    }
+     a:before{
+        margin-bottom:15px;
+    }
+    a:after{
+        margin-top: 15px;
+    }
+    
+}
+.blockLogo{
+    height:80px;
+    display: flex;
+    align-items: center;
+    font-family: Dosis;
+    font-weight: 300;
+}
+.logo{
+    height: 100%;
+}
+.logo *{
+    color: #ff0036;
+    fill:#ff0036;
+}
+.text{
+    font-size: 30px;
+    color: #fff;
+}
+.pending{
+    color: #505052;
+}
+.active{
+    color: #fff;
+}
+.active:after,.active::before{
+    background: #ff0036;
+}
